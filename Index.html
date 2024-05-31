@@ -1,0 +1,466 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="./bs-js/bootstrap.min.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link
+        href="https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap"
+        rel="stylesheet">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.3/font/bootstrap-icons.min.css">
+    <link rel="stylesheet" href="./main.css">
+    <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/jquery-validation@1.19.3/dist/jquery.validate.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery.mask/1.14.16/jquery.mask.min.js"></script>
+</head>
+
+<body>
+    <header class="navbar navbar-expand-lg sticky-top p-4" id="cabecalho">
+        <div class="container">
+            <h1 class="navbar-brand section-title m-0 fw-bold">SkyHigh Aviation</h1>
+            <button class="navbar-toggler" data-bs-toggle="collapse" data-bs-target="#botao-navegacao">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+            <nav class="navbar-collapse collapse justify-content-end" id="botao-navegacao">
+                <ul class="nav nav-pills d-block d-md-flex">
+                    <li class="nav-item fw-bold">
+                        <a href="#sobre-a-escola" class="nav-link active">
+                            <i class="bi bi-house-door me-1"></i>
+                            Sobre a SkyHigh
+                        </a>
+                    </li>
+                    <li class="nav-item fw-bold ">
+                        <a href="#cursos" class="nav-link">
+                            <i class="bi bi-calendar-check me-1"></i>
+                            Cursos
+                        </a>
+                    </li>
+                    <li class="nav-item fw-bold">
+                        <a href="#aeronaves" class="nav-link">
+                            <i class="bi bi-airplane me-1"></i>
+                            Aeronaves
+                        </a>
+                    </li>
+                    <li class="nav-item fw-bold">
+                        <a href="#fale-conosco" class="nav-link">
+                            <i class="bi bi-chat-left-text me-1"></i>
+                            Fale conosco
+                        </a>
+                    </li>
+                </ul>
+            </nav>
+        </div>
+    </header>
+
+    <div data-bs-spy="scroll" data-bs-target="cabecalho" data-bs-smooth-scroll="true">
+        <section id="sobre-a-escola">
+            <div class="carousel slide" data-bs-ride="carousel" id="carousel">
+                <div class="carousel-inner">
+                    <div class="carousel-item active" data-bs-interval="3000">
+                        <img src="./images/slides/pexels-pixabay-104826.jpg">
+                    </div>
+                    <div class="carousel-item" data-bs-interval="3000">
+                        <img src="./images/slides/pexels-pixabay-358220.jpg">
+                    </div>
+                    <div class="carousel-item" data-bs-interval="3000">
+                        <img src="./images/slides/pexels-raf-jabri-29128-113585.jpg">
+                    </div>
+                </div>
+                <button type="button" class="carousel-control-prev" data-bs-target="#carousel" data-bs-slide="prev">
+                    <span class="carousel-control-prev-icon"></span>
+                </button>
+                <button type="button" class="carousel-control-next" data-bs-target="#carousel" data-bs-slide="next">
+                    <span class="carousel-control-next-icon"></span>
+                </button>
+                <div class="carousel-indicators">
+                    <button type="button" data-bs-target="#carousel" class="active" data-bs-slide-to="0"></button>
+                    <button type="button" data-bs-target="#carousel" data-bs-slide-to="1"></button>
+                    <button type="button" data-bs-target="#carousel" data-bs-slide-to="2"></button>
+                </div>
+            </div>
+            <div class="pt-5 pb-5">
+                <div class="container" id="sobre-a-escola">
+                    <div class="row">
+                        <div class="col-md-5 ">
+                            <img src="./images/pexels-rhys-abel-2233101-9162785.jpg" class="d-block w-100 rounded"
+                                alt="">
+                        </div>
+                        <div class="col-md-7 mt-3 mt-md-0">
+                            <h2 class="section-title">Sobre a <span>SkyHigh Academy</span></h2>
+                            <p>Bem-vindo à SkyHigh Aviation Academy, onde sonhos ganham asas e pilotos são formados para
+                                dominar os céus!
+                                Desde a nossa fundação, a SkyHigh Aviation Academy tem se dedicado a fornecer uma
+                                educação de aviação de classe mundial, combinando teoria rigorosa com prática intensiva.
+                                Localizada no coração de São Paulo, nossa escola é um centro de excelência para
+                                aspirantes a pilotos que buscam uma carreira emocionante e desafiadora na aviação.</p>
+                            <h3 class="section-title">Nossa <span>Missão</span></h3>
+                            <p>Na SkyHigh Aviation Academy, nossa missão é treinar e preparar a próxima geração de
+                                pilotos profissionais, promovendo um ambiente de aprendizado seguro, inclusivo e
+                                estimulante. Estamos comprometidos em manter os mais altos padrões de segurança e
+                                profissionalismo, garantindo que nossos alunos estejam totalmente preparados para
+                                qualquer desafio que possam encontrar nos céus.</p>
+                        </div>
+        </section>
+        <div data-bs-spy="scroll" data-bs-target="cabecalho">
+            <section class="pt-5 pb-5" id="cursos">
+                <div class="container">
+                    <div class="row mt-4">
+                        <h2 class="section-title text-center pb-5">Nossos <span>Cursos</span></h2>
+                    </div>
+                    <div class="row">
+                        <div class="col-md-4">
+                            <img src="./images/Produtos/pexels-thisisengineering-3862634.jpg" alt="imagem manche"
+                                class="d-block w-100 rounded mb-2">
+                            <h3 class="section-title  text-colored">
+                                <i class="bi bi-airplane "></i>
+                                Curso de Piloto Privado (PPA)
+                            </h3>
+                            <p>O Curso de Piloto Privado é o primeiro passo para qualquer pessoa interessada em aprender
+                                a voar. Este curso é ideal para quem deseja pilotar aviões por hobby ou iniciar uma
+                                carreira na aviação.</p>
+                        </div>
+                        <div class="col-md-4">
+                            <img src="./images/Produtos/pexels-limonovdigital-9176702.jpg" alt="piloto comercial"
+                                class="d-block w-100 rounded mb-2">
+                            <h3 class="section-title  text-colored">
+                                <i class="bi bi-airplane-engines "></i>
+                                Curso de Piloto Comercial de Avião (PCA)
+                            </h3>
+                            <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Explicabo laudantium rerum
+                                asperiores repudiandae dignissimos at eaque quae dicta inventore voluptates sed amet
+                                distinctio blanditiis obcaecati labore repellat, ad velit sint.</p>
+                        </div>
+                        <div class="col-md-4">
+                            <img src="./images/Produtos/pexels-arnaud24-5892000.jpg" alt="instrutor-piloto"
+                                class="d-block w-100 rounded mb-2">
+                            <h3 class="section-title  text-colored">
+                                <i class="bi bi-airplane-engines "></i>
+                                Curso de Instrutor de Voo
+                            </h3>
+                            <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Explicabo laudantium rerum
+                                asperiores repudiandae dignissimos at eaque quae dicta inventore voluptates sed amet
+                                distinctio blanditiis obcaecati labore repellat, ad velit sint.</p>
+                        </div>
+                    </div>
+                </div>
+            </section>
+            <section id="aeronaves" class="pt-5 pb-5">
+                <div class="container">
+                    <div class="row">
+                        <h2 class="section-title text-center mb-5">Nossas <span class="text-colored">Aeronaves</span>
+                        </h2>
+                    </div>
+                    <div class="row">
+                        <aside class="col-md-2">
+                            <nav class="nav nav-pills flex-column nav-aeronave">
+                                <button type="button" data-bs-toggle="tab" data-bs-target="#avioes-de-asa-fixa"
+                                    class="fw-bold text-start nav-link active text-colored">Aviões de Asa Fixa</button>
+                                <button type="button" data-bs-toggle="tab" data-bs-target="#helicopteros"
+                                    class="fw-bold text-start nav-link  text-colored">Helicópteros</button>
+                                <button type="button" data-bs-toggle="tab" data-bs-target="#avioes-de-carga"
+                                    class="fw-bold text-start nav-link text-colored ">Aviões de Carga</button>
+                                <button type="button" data-bs-toggle="tab" data-bs-target="#avioes-militares"
+                                    class="fw-bold text-start nav-link text-colored">Aviões Militares</button>
+                                <button type="button" data-bs-toggle="tab" data-bs-target="#aviao-turismo"
+                                    class="fw-bold text-start nav-link text-colored">Aviões de Turismo</button>
+                            </nav>
+                        </aside>
+                        <div class="col-md-10">
+                            <div class="tab-content">
+                                <div class="tab-pane active" id="avioes-de-asa-fixa">
+                                    <div class="row">
+                                        <div class="col-md-3">
+                                            <img class="d-block w-100"
+                                                src="./images/Aeronaves/Avião de asa fixa/airplane-5771037_1280.jpg"
+                                                alt="aviões-de-asa-fixa">
+                                            <h5 class="text-colored fw-bold mt-2">Avião de Asa Fixa</h5>
+                                            <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Fugiat at
+                                                voluptatem earum voluptatibus </p>
+                                        </div>
+                                        <div class="col-md-3">
+                                            <img class="d-block w-100"
+                                                src="./images/Aeronaves/Avião de asa fixa/cessna-caravan-aircraft-2481481_1280.jpg"
+                                                alt="aviões-de-asa-fixa">
+                                            <h5 class="text-colored fw-bold mt-2">Avião de Asa Fixa</h5>
+                                            <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Fugiat at
+                                                voluptatem earum voluptatibus </p>
+                                        </div>
+                                        <div class="col-md-3">
+                                            <img class="d-block w-100"
+                                                src="./images/Aeronaves/Avião de asa fixa/airplane-5771037_1280.jpg"
+                                                alt="aviões-de-asa-fixa">
+                                            <h5 class="text-colored fw-bold mt-2">Avião de Asa Fixa</h5>
+                                            <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Fugiat at
+                                                voluptatem earum voluptatibus </p>
+                                        </div>
+                                        <div class="col-md-3">
+                                            <img class="d-block w-100"
+                                                src="./images/Aeronaves/Avião de asa fixa/cessna-caravan-aircraft-2481481_1280.jpg"
+                                                alt="aviões-de-asa-fixa">
+                                            <h5 class="text-colored fw-bold mt-2">Avião de Asa Fixa</h5>
+                                            <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Fugiat at
+                                                voluptatem earum voluptatibus </p>
+                                        </div>
+                                        <div class="col-md-3">
+                                            <img class="d-block w-100"
+                                                src="./images/Aeronaves/Avião de asa fixa/airplane-5771037_1280.jpg"
+                                                alt="aviões-de-asa-fixa">
+                                            <h5 class="text-colored fw-bold mt-2">Avião de Asa Fixa</h5>
+                                            <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Fugiat at
+                                                voluptatem earum voluptatibus </p>
+                                        </div>
+                                        <div class="col-md-3">
+                                            <img class="d-block w-100"
+                                                src="./images/Aeronaves/Avião de asa fixa/cessna-caravan-aircraft-2481481_1280.jpg"
+                                                alt="aviões-de-asa-fixa">
+                                            <h5 class="text-colored fw-bold mt-2">Avião de Asa Fixa</h5>
+                                            <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Fugiat at
+                                                voluptatem earum voluptatibus </p>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="tab-pane" id="helicopteros">
+                                    <div class="row">
+                                        <div class="col-md-3">
+                                            <img class="d-block w-100"
+                                                src="./images/Aeronaves/Helicópiteros/Helicópitero 1.jpg"
+                                                alt="imagem-helicoptero 1">
+                                            <h5 class="text-colored fw-bold mt-2">Helicóptero 1</h5>
+                                            <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Fugiat at
+                                                voluptatem earum voluptatibus </p>
+                                        </div>
+                                        <div class="col-md-3">
+                                            <img class="d-block w-100"
+                                                src="./images/Aeronaves/Helicópiteros/Helicoptero 2.jpg"
+                                                alt="imagem-helicoptero 2">
+                                            <h5 class="text-colored fw-bold mt-2">Helicóptero 2</h5>
+                                            <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Fugiat at
+                                                voluptatem earum voluptatibus </p>
+                                        </div>
+                                        <div class="col-md-3">
+                                            <img class="d-block w-100"
+                                                src="./images/Aeronaves/Helicópiteros//Helicóptero 4.jpg"
+                                                alt="imagem-helicoptero 4">
+                                            <h5 class="text-colored fw-bold mt-2">Helicóptero 3</h5>
+                                            <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Fugiat at
+                                                voluptatem earum voluptatibus </p>
+                                        </div>
+                                        <div class="col-md-3">
+                                            <img class="d-block w-100"
+                                                src="./images/Aeronaves/Helicópiteros//Helicóptero 4.jpg"
+                                                alt="imagem-helicoptero 4">
+                                            <h5 class="text-colored fw-bold mt-2">Helicópteros 4</h5>
+                                            <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Fugiat at
+                                                voluptatem earum voluptatibus </p>
+                                        </div>
+                                        <div class="col-md-3">
+                                            <img class="d-block w-100"
+                                                src="./images/Aeronaves/Helicópiteros//Helicóptero 4.jpg"
+                                                alt="imagem-helicoptero 4">
+                                            <h5 class="text-colored fw-bold mt-2">Helicópteros 5</h5>
+                                            <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Fugiat at
+                                                voluptatem earum voluptatibus </p>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="tab-pane" id="avioes-de-carga">
+                                    <div class="row">
+                                        <div class="col-md-3">
+                                            <img class="d-block w-100" src="./images/Aeronaves/Avião de Carga/beluga-2665147_1280.jpg"
+                                                alt="aviões-de-carga">
+                                            <h5 class="text-colored fw-bold mt-2">Avião de Carga</h5>
+                                            <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Fugiat at
+                                                voluptatem earum voluptatibus </p>
+                                        </div>
+                                        <div class="col-md-3">
+                                            <img class="d-block w-100" src="./images/Aeronaves/Avião de Carga/beluga-2665147_1280.jpg"
+                                                alt="aviões-de-carga">
+                                            <h5 class="text-colored fw-bold mt-2">Avião de Carga</h5>
+                                            <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Fugiat at
+                                                voluptatem earum voluptatibus </p>
+                                        </div>
+                                        <div class="col-md-3">
+                                            <img class="d-block w-100" src="./images/Aeronaves/Avião de Carga/beluga-2665147_1280.jpg"
+                                                alt="aviões-de-carga">
+                                            <h5 class="text-colored fw-bold mt-2">Avião de Carga</h5>
+                                            <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Fugiat at
+                                                voluptatem earum voluptatibus </p>
+                                        </div> <div class="col-md-3">
+                                            <img class="d-block w-100" src="./images/Aeronaves/Avião de Carga/beluga-2665147_1280.jpg"
+                                                alt="aviões-de-carga">
+                                            <h5 class="text-colored fw-bold mt-2">Avião de Carga</h5>
+                                            <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Fugiat at
+                                                voluptatem earum voluptatibus </p>
+                                        </div>
+                                        <div class="col-md-3">
+                                            <img class="d-block w-100" src="./images/Aeronaves/Avião de Carga/beluga-2665147_1280.jpg"
+                                                alt="aviões-de-carga">
+                                            <h5 class="text-colored fw-bold mt-2">Avião de Carga</h5>
+                                            <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Fugiat at
+                                                voluptatem earum voluptatibus </p>
+                                        </div>
+                                      
+                                        
+                                    </div>
+                                </div>
+                                <div class="tab-pane" id="avioes-militares">
+                                    <div class="row">
+                                        <div class="col-md-3">
+                                            <img class="d-block w-100" src="./images/Aeronaves/Avião Militar/av-8b-harrier-1986422_1280.jpg"
+                                                alt="avioes-militares">
+                                            <h5 class="text-colored fw-bold mt-2">Avião Militar</h5>
+                                            <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Fugiat at
+                                                voluptatem earum voluptatibus </p>
+                                        </div>
+                                        <div class="col-md-3">
+                                            <img class="d-block w-100" src="./images/Aeronaves/Avião Militar/av-8b-harrier-1986422_1280.jpg"
+                                                alt="avioes-militares">
+                                            <h5 class="text-colored fw-bold mt-2">Avião Militar</h5>
+                                            <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Fugiat at
+                                                voluptatem earum voluptatibus </p>
+                                        </div>
+                                        <div class="col-md-3">
+                                            <img class="d-block w-100" src="./images/Aeronaves/Avião Militar/av-8b-harrier-1986422_1280.jpg"
+                                                alt="avioes-militares">
+                                            <h5 class="text-colored fw-bold mt-2">Avião Militar</h5>
+                                            <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Fugiat at
+                                                voluptatem earum voluptatibus </p>
+                                        </div>
+                                        <div class="col-md-3">
+                                            <img class="d-block w-100" src="./images/Aeronaves/Avião Militar/av-8b-harrier-1986422_1280.jpg"
+                                                alt="avioes-militares">
+                                            <h5 class="text-colored fw-bold mt-2">Avião Militar</h5>
+                                            <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Fugiat at
+                                                voluptatem earum voluptatibus </p>
+                                        </div>
+                                        <div class="col-md-3">
+                                            <img class="d-block w-100" src="./images/Aeronaves/Avião Militar/av-8b-harrier-1986422_1280.jpg"
+                                                alt="avioes-militares">
+                                            <h5 class="text-colored fw-bold mt-2">Avião Militar</h5>
+                                            <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Fugiat at
+                                                voluptatem earum voluptatibus </p>
+                                        </div>
+                                     
+                                    </div>
+                                </div>
+                                <div class="tab-pane" id="aviao-turismo">
+                                    <div class="row">
+                                        <div class="col-md-3">
+                                            <img class="d-block w-100" src="./images/Aeronaves/Avião Turismo/airbus-4454338_1280.jpg"
+                                                alt="aviao-turismo">
+                                            <h5 class="text-colored fw-bold mt-2">Avião de Turismo</h5>
+                                            <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Fugiat at
+                                                voluptatem earum voluptatibus </p>
+                                        </div>
+                                        <div class="col-md-3">
+                                            <img class="d-block w-100" src="./images/Aeronaves/Avião Turismo/airbus-4454338_1280.jpg"
+                                                alt="aviao-turismo">
+                                            <h5 class="text-colored fw-bold mt-2">Avião de Turismo</h5>
+                                            <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Fugiat at
+                                                voluptatem earum voluptatibus </p>
+                                        </div>
+                                        <div class="col-md-3">
+                                            <img class="d-block w-100" src="./images/Aeronaves/Avião Turismo/airbus-4454338_1280.jpg"
+                                                alt="aviao-turismo">
+                                            <h5 class="text-colored fw-bold mt-2">Avião de Turismo</h5>
+                                            <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Fugiat at
+                                                voluptatem earum voluptatibus </p>
+                                        </div>
+                                        <div class="col-md-3">
+                                            <img class="d-block w-100" src="./images/Aeronaves/Avião Turismo/airbus-4454338_1280.jpg"
+                                                alt="aviao-turismo">
+                                            <h5 class="text-colored fw-bold mt-2">Avião de Turismo</h5>
+                                            <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Fugiat at
+                                                voluptatem earum voluptatibus </p>
+                                        </div>
+                                        <div class="col-md-3">
+                                            <img class="d-block w-100" src="./images/Aeronaves/Avião Turismo/airbus-4454338_1280.jpg"
+                                                alt="aviao-turismo">
+                                            <h5 class="text-colored fw-bold mt-2">Avião de Turismo</h5>
+                                            <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Fugiat at
+                                                voluptatem earum voluptatibus </p>
+                                        </div>
+                                     
+                                      
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+        </div>
+        </section>
+        <section id="fale-conosco">
+            <div class="container">
+                <div class="row">
+                    <h2 class="text-center section-title pb-5 pt-5">Fale <span class="text-colored">Conosco</span></h2>
+                </div>
+                <div class="row">
+                    <div class="col-md-7">
+                        <form id="contact-form">
+                            <div class="mb-3">
+                                <label for="nome" class="form-label fw-bold text-colored">Digite seu Nome</label>
+                                <input type="text" id="nome" class="form-control">
+                            </div>
+                            <div class="mb-3">
+                                <label for="email" class="form-label fw-bold text-colored">Digite seu email</label>
+                                <input type="email" id="email" class="form-control">
+                            </div>
+                            <div class="mb-3">
+                                <label for="telefone" class="form-label fw-bold text-colored">Digite seu Telefone
+                                    (Opcional)</label>
+                                <input type="tel" id="telefone" class="form-control">
+                            </div>
+                            <div class="mb-3">
+                                <label for="mensagem" class="form-label fw-bold text-colored">Digite sua
+                                    mensagem</label>
+                                <textarea id="textarea" class="form-control" id="mensagem"></textarea>
+                            </div>
+                            <button id="botao-formulario" type="submit" class="btn">Enviar</button>
+                        </form>
+                    </div>
+                    <div class="col-md-5">
+                        <div class="row">
+                            <h3 class="section-title fs-4 text-colored mt-5 mt-md-0">
+                                <i class="bi bi-hand-thumbs-up-fill"></i>
+                                Redes Sociais
+                            </h3>
+                            <ul class="social-links">
+                                <li class="fs-5">
+                                    <a href="#">
+                                        <i class="bi bi-facebook  text-colored"></i>
+                                    </a>
+                                </li>
+                                <li class="fs-5 ms-1 me-1">
+                                    <a href="#">
+                                        <i class="bi bi-instagram text-colored"></i>
+                                    </a>
+                                </li>
+                                <li class="fs-5">
+                                    <a href="#">
+                                        <i class="bi bi-whatsapp text-colored"></i>
+                                    </a>
+                                </li>
+                            </ul>
+                        </div>
+                        <div class="row mt-4">
+                            <h3 class="section-title fs-4 text-colored">
+                                <i class="bi bi-cursor-fill"></i>
+                                Endereço
+                            </h3>
+                            <p>Rua testem numero 332, São Paulo SP</p>
+                        </div>
+                    </div>
+                </div>
+        </section>
+    </div>
+    </div>
+    <script src="./bs-js/bootstrap.bundle.min.js"></script>
+    <script src="./main.js"></script>
+
+</body>
+
+</html>
